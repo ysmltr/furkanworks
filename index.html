@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <title>Multi Markers</title>
+    <style>
+        #map { 
+            height: 600px; 
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // Haritayı oluştur
+        var map = L.map('map').setView([51.505, -0.09], 5);
+
+        // Tile layer ekle
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+       
+        var regions = [
+    { name: "Güney Kampüs", coords: [41.08440448188411, 29.0506062733824] },
+    { name: "Moc Meydan İstanbul", coords: [41.02465547162619, 29.12693552586946] },
+    { name: "Moc Nişantaşı", coords: [41.04945130393753, 28.99607265919107] },
+    { name: "Harvard Cafe", coords: [41.081949393962724, 29.033751824026535] },
+    { name: "Çay İstanbul Kitap Kafe", coords: [41.04753378047009, 28.935106308682993] },
+    { name: "Kemerburgaz Kent Ormanı", coords: [41.162631884803375, 28.885491245370467] },
+    { name: "Taksim Tünel'deki Espresso Lab", coords: [] },
+    { name: "Kemerburgaz Kent Ormanı (hamak)", coords: [] },
+    { name: "micoffees", coords: [] },
+    { name: "Kava Coffee", coords: [] },
+    { name: "Bağdat Caddesi Kahve Dünyası", coords: [] },
+    { name: "Meydan İstanbul Moc", coords: [] },
+    { name: "Suadiye Espresso Park", coords: [] },
+    { name: "Gazhane Beltur", coords: [] },
+    { name: "Narmanlı Han Caffe Nero", coords: [] },
+    { name: "Kuzey Kampüs", coords: [] },
+    { name: "Kadıköy Dem", coords: [] },
+    { name: "Matters Suadiye", coords: [] },
+    { name: "Maple Büyükada", coords: [] },
+    { name: "Türk-Alman Kitapevi", coords: [] },
+    { name: "Leaf Co. Suadiye", coords: [] },
+    { name: "Boite Suadiye", coords: [] },
+    { name: "Bomonti Cooklife", coords: [] },
+    { name: "Bebek Starbucks", coords: [] },
+    { name: "Boden Kadıköy", coords: [] },
+    { name: "Suadiye Sahil Beltur", coords: [] },
+    { name: "Millet Kütüphanesi", coords: [] },
+    { name: "Göcek Moc", coords: [] },
+    { name: "Sunday Teşvikiye", coords: [] },
+    { name: "Paper Roasting Coffee", coords: [] },
+    { name: "Hilltown Kronotrop", coords: [] },
+    { name: "Velidebağ Korusu", coords: [] },
+    { name: "Zonguldak Ereğli Mado", coords: [] },
+    { name: "Assos (şezlong takıyor)", coords: [] },
+    { name: "Ereğli Espresso Lab", coords: [] },
+    { name: "Datça (şezlong takılıyor)", coords: [] },
+    { name: "Karaköy Kronotrop", coords: [] },
+    { name: "Sırbistan'da bir yer", coords: [] },
+    { name: "Mankind Coffee & Eatings", coords: [] },
+    { name: "Coffee Plus Roastery", coords: [] },
+    { name: "Noema Kafe Datça", coords: [] },
+    { name: "Fethiye", coords: [] },
+    { name: "Oxygen Pub", coords: [] },
+    { name: "Suadiye Meet Lab", coords: [] },
+    { name: "Kronotrop Topağacı", coords: [] },
+    { name: "Ground Coffee", coords: [] },
+    { name: "Espresso Lab Caddebostan", coords: [] },
+    { name: "Kronotrop Suadiye", coords: [] },
+    { name: "Nunu Cafe Urla", coords: [] },
+    { name: "Suò•lo Urla otel lobisi", coords: [] },
+    { name: "Columbia Coffee Ereğli", coords: [] },
+    { name: "Ronnefeldt", coords: [] },
+    { name: "Abant", coords: [] },
+    { name: "Tokyo-Kyoto arası tren", coords: [] },
+    { name: "Yoyogi Parkı", coords: [] },
+    { name: "10 Dixans", coords: [] },
+    { name: "Tsutaya Books", coords: [] },
+    { name: "Shinjuku Gyoen Starbucks", coords: [] },
+    { name: "Kdz. Ereğli’de Caldi’s cafe", coords: [] },
+    { name: "Phuket", coords: [] },
+    { name: "Miel Coffee Canggu", coords: [] },
+    { name: "Bali", coords: [] },
+    { name: "Hisbeans Caffee Güney Kore", coords: [] },
+    { name: "Eunpyeong Hanok Village civarı bir kafe", coords: [] }
+];
+
+
+        // Döngü ile işaretçileri ekle
+        regions.forEach(function(region) {
+            var marker = L.marker(region.coords).addTo(map);
+            marker.bindPopup(`<b>${region.name}</b><br>This is ${region.name}.`);
+        });
+
+    </script>
+</body>
+</html>
