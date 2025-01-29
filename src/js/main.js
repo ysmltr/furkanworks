@@ -378,11 +378,14 @@ const locations = [
         name: "Eunpyeong Hanok Village Civarı Bir Kafe",
         coords: [37.64168559665493, 126.93940729929572],
         tweet: "1716329760807321713",
-        date: ["Oct 23, 2023"]
+        date: ["Oct 23, 2023"],
+    },{
+        "name": "Luka Cafe",
+        coords: [13.721596914157862, 100.52384627580368],
+        tweet : "1883883437616226428",
+        date: ["Jan 27, 2025"]
     }
 ];
-
-
 // Function to generate Google Maps link
 function generateGoogleMapsUrl(coords) {
     return `https://www.google.com/maps?q=${coords[0]},${coords[1]}`;
