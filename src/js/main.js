@@ -384,7 +384,14 @@ const locations = [
         coords: [13.721596914157862, 100.52384627580368],
         tweet : "1883883437616226428",
         date: ["Jan 27, 2025"]
+    },
+    {
+        "name": "Open House",
+        coords: [13.743930796171005, 100.546991567709],
+        tweet : "1884854445336666452",
+        date: ["Jan 30, 2025"]
     }
+
 ];
 // Function to generate Google Maps link
 function generateGoogleMapsUrl(coords) {
