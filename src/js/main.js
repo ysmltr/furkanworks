@@ -390,8 +390,16 @@ const locations = [
         coords: [13.743930796171005, 100.546991567709],
         tweet : "1884854445336666452",
         date: ["Jan 30, 2025"]
+    },
+    {
+        "name": "Paper Plane Project",
+        coords: [13.722435625647124, 100.58147131971302],
+        tweet : "1887738447278022728",
+        date: ["Feb 7, 2025"]
     }
 
+
+    
 ];
 // Function to generate Google Maps link
 function generateGoogleMapsUrl(coords) {
