@@ -3,12 +3,12 @@ import dotenv   from 'dotenv';
 import path     from 'path';
 import { fileURLToPath } from 'url';
 import cors from 'cors';
-app.use(cors({ origin: 'https://furkanworks.vercel.app' }));
+
 dotenv.config({ path: path.resolve('./server/.env') });
 
 const app = express();
 app.use(express.json());
-
+app.use(cors({ origin: 'https://furkanworks.vercel.app' }));
 /* statik dosyalar */
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, '..'))); 
