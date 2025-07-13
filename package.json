@@ -1,0 +1,18 @@
+{
+  "name": "furkanworks",
+  "version": "1.0.0",
+  "description": "Furkan Works, [Furkan Kılıç'ın](https://x.com/benfurkankilic) dünya üzerinde ziyaret ettiği çeşitli kafelerin ve mekanların konumlarını gösteren bir harita uygulamasıdır. Bu uygulama, kullanıcıların belirli kafelerin Google Maps üzerindeki yerlerini görüntülemelerine olanak tanır.\r <br><br>\r # Özellikler",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  }
+}

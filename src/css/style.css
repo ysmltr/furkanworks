@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+
+}
+
+#map-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+html,body{height:100%;margin:0}  
+#info-box {
+    position: absolute;
+    top: 20px;  
+    right: 20px;
+    z-index: 1000; 
+}
+
+#info-icon {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#info-icon:hover {
+    transform: scale(1.05);
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    color: #3498db;
+}
+#info-modal {
+    display: none;
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 0;
+    width: max-content;
+    max-width: 320px;
+    font-family: "Montserrat", sans-serif;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2c3e50;
+    transform-origin: top right;
+    animation: modalShow 0.3s ease-out;
+}
+
+#info-modal::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    transform: rotate(45deg);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes modalShow {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content {
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.custom-popup .leaflet-popup-content {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-popup .leaflet-popup-tip {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    #info-modal {
+        max-width: 280px;
+        right: -10px;
+        font-size: 13px;
+    }
+
+    #info-icon {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+/* Mekan Ekle butonu */
+#add-location-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Modal stil */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content form input, .modal-content form button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+}
+/* Buton stil */
+#add-location-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #343434;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Modal stil */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal kutusu */
+.modal-content {
+  background: #fff;
+  padding: 32px;
+  border-radius: 14px;
+  max-width: 440px;
+  width: 90%;
+  margin: 5% auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 1px solid #e5e7eb;
+}
+
+/* Başlık */
+.modal-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+  color: #111827;
+}
+
+/* Açıklama */
+.modal-content p {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Kapatma X */
+.close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #9ca3af;
+  cursor: pointer;
+}
+.close:hover {
+  color: #374151;
+}
+
+/* Label ve input/textarea */
+.modal-content label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #374151;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  background: #f9fafb;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: #fff;
+}
+
+/* Gönder butonu */
+.modal-content button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.modal-content button:hover {
+  background-color: #2563eb;
+}
+
