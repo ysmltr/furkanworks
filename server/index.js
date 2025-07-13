@@ -2,7 +2,8 @@ import express from 'express';
 import dotenv   from 'dotenv';
 import path     from 'path';
 import { fileURLToPath } from 'url';
-
+import cors from 'cors';
+app.use(cors({ origin: 'https://furkanworks.vercel.app' }));
 dotenv.config({ path: path.resolve('./server/.env') });
 
 const app = express();
