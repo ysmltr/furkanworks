@@ -1,7 +1,7 @@
 import { staticLocations } from './staticLocations.js';
 
 /* — 0. Sabitler — */
-const ENDPOINT  = 'https://furkanworks.onrender.com/api/add';  
+const ENDPOINT  = '/api/add';  
 const NOMINATIM = 'https://nominatim.openstreetmap.org/search';
 
 /* — 1. Harita — */
