@@ -298,3 +298,32 @@ html,body{height:100%;margin:0}
   background-color: #2563eb;
 }
 
+/* yuvarlak buton (aynı stili info‑icon ile paylaşıyor) */
+.circle-btn{
+  position:absolute;
+  top:20px;
+  right:70px;          /* info‑icon + boşluk */
+  width:42px;height:42px;
+  border:none;border-radius:50%;
+  background:#000000aa;
+  font:600 20px/42px 'Inter',sans-serif;
+  color:#2c3e50;cursor:pointer;
+  box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+.circle-btn:hover{background:#fff;}
+
+/* modal */
+.faq-modal{
+  display:none;position:fixed;inset:0;
+  background:rgba(0, 0, 0, 0.35);backdrop-filter:blur(2px);
+  z-index:2000;
+}
+.faq-box{
+  max-width:320px;
+  background:#fff;border-radius:12px;
+  padding:20px;margin:60px auto;font:14px/1.6 'Inter',sans-serif;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.faq-box .close{
+  float:right;font-size:20px;cursor:pointer;
+}

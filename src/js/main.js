@@ -119,3 +119,15 @@ if(L.Browser.mobile){
     map.panTo(map.unproject(px),{animate:true,duration:0.5});
   });
 }
+
+
+/* — 8. FAQ düğmesi — */
+const faqBtn   = document.getElementById('faq-btn');
+const faqModal = document.getElementById('faq-modal');
+const faqClose = document.getElementById('faq-close');
+
+if (faqBtn && faqModal && faqClose){
+  faqBtn.onclick   = () => faqModal.style.display = 'block';
+  faqClose.onclick = () => faqModal.style.display = 'none';
+  window.onclick   = e => { if (e.target === faqModal) faqModal.style.display = 'none'; };
+}

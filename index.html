@@ -21,6 +21,17 @@
 <body>
 
   <div id="map" style="height:100vh;"></div>
+<!-- map div’inin hemen sonrasına yerleştir -->
+<button id="faq-btn" class="circle-btn">?</button>
+
+<div id="faq-modal" class="faq-modal">
+  <div class="faq-box">
+    <span id="faq-close" class="close">×</span>
+    <p>• Kafe adına tıkladığınızda konum Google Maps’te açılır.</p>
+    <p>• Yeni konum eklemek için yalnızca <b>lat,lng</b> koordinatını yazın.
+       Ek açıklama girmek isterseniz sağ üstteki “+” butonunu kullanın.</p>
+  </div>
+</div>
 
   <!-- + butonu -->
   <button id="add-location-btn">+</button>
@@ -33,13 +44,13 @@
 
       <form id="location-form">
         <label>Mekan Adı</label>
-        <input id="name" placeholder="Boş bırak → otomatik">
+        <input id="name" >
 
         <label>Tarih</label>
         <input id="date" type="date">
 
         <label>Adres</label>
-        <input id="address" required>
+        <input id="address" required placeholder=" Ek açıklama için isterseniz sağ üstteki “?” butona tıklayın">
 
         <label>Yorum</label>
         <textarea id="comment" rows="4"
