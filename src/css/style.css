@@ -298,25 +298,29 @@ html,body{height:100%;margin:0}
   background-color: #2563eb;
 }
 
-/* yuvarlak buton (aynı stili info‑icon ile paylaşıyor) */
+/* yuvarlak FAQ butonu */
 .circle-btn{
-  position:absolute;
+  position:fixed;          
   top:20px;
-  right:70px;          /* info‑icon + boşluk */
+  right:70px;              /* info‑icon varsa çarpmasın                  */
   width:42px;height:42px;
   border:none;border-radius:50%;
-  background:#000000aa;
   font:600 20px/42px 'Inter',sans-serif;
-  color:#2c3e50;cursor:pointer;
+  background:#ffffffee;
+  color:#2c3e50;
   box-shadow:0 4px 15px rgba(0,0,0,.1);
+  cursor:pointer;
+  z-index:1201;            /* Leaflet kontrolleri 1000 → üstüne çık         */
 }
 .circle-btn:hover{background:#fff;}
 
 /* modal */
 .faq-modal{
-  display:none;position:fixed;inset:0;
+  display:none;
+  position:fixed;
+  inset:0;
   background:rgba(0, 0, 0, 0.35);backdrop-filter:blur(2px);
-  z-index:2000;
+  z-index:1200;
 }
 .faq-box{
   max-width:320px;
