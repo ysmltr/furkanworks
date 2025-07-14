@@ -12,6 +12,8 @@ app.use(cors({ origin: 'https://furkanworks.vercel.app' }));
 /* statik dosyalar */
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, '..'))); 
+app.get('/api/ping', (_, res) => res.send('pong'));
+
 /* POST /api/add → SheetDB */
 app.post('/api/add', async (req, res) => {
   try {
