@@ -1,5 +1,5 @@
 # Furkan Works
-Furkan Works, [Furkan Kılıç'ın](https://x.com/benfurkankilic) dünya üzerinde ziyaret ettiği çeşitli kafelerin ve mekanların konumlarını gösteren bir harita uygulamasıdır. Bu uygulama, kullanıcıların belirli kafelerin Google Maps üzerindeki yerlerini görüntülemelerine olanak tanır.
+Furkan Works, [Furkan Kılıç'ın](https://x.com/benfurkankilic) dünya üzerinde ziyaret ettiği çeşitli kafelerin ve mekanların konumlarını gösteren bir harita uygulamasıdır. Bu uygulama, kullanıcıların belirli kafelerin Google Maps üzerindeki yerlerini görüntülemelerine ve mekan eklemelerine olanak tanır.
 <br><br>
 # Özellikler
 
@@ -13,4 +13,4 @@ Furkan Works, [Furkan Kılıç'ın](https://x.com/benfurkankilic) dünya üzerin
 <br>-JavaScript
 <br>-Leaflet.js (Harita için)
 <br>-OpenStreetMap (Tile layer için)
-<br>-Live Link: [Furkan Works](https://furkanworks.vercel.app)
+<br>-Live Link: [Furkan Works](https://furkanworks.netlify.app)
