@@ -398,6 +398,12 @@ export const staticLocations = [
         coords: [13.726921028979357, 100.51091259343467],
         tweet : "1888843402755867092",
         date: ["Feb 10, 2025"]
+    },
+    {
+       "name": "Patom Organic Living",
+       coords: [13.738683549162314, 100.58009428903114],
+        tweet : "1988230634545074322",
+        date: ["Nov 11, 2025"]
     }
 
 
