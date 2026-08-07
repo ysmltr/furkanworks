@@ -9,24 +9,28 @@ export const staticLocations = [
     {
         name: "Moc Meydan İstanbul",
         coords: [41.0245238902176, 29.126823819355998],
+        emoji: "☕",
         tweet: "1411307279136215046",
         date: ["Jul 3, 2021"]
     },
     {
         name: "Moc Nişantaşı",
         coords: [41.049295710894356, 28.99599112675089],
+        emoji: "☕",
         tweet: "1412368056735744000",
         date: ["Jul 6, 2021"]
     },
     {
         name: "Harvard Cafe",
         coords: [41.081771477973064, 29.033816197038227],
+        emoji: "☕",
         tweet: "1413088009415712772",
         date: ["Jul 8, 2021"]
     },
     {
         name: "Çay İstanbul Kitap Kafe(Kalıcı olarak kapalı)",
         coords: [41.049913126805464, 28.94137425700651],
+        emoji: "☕",
         tweet: "1414118975051649026",
         date: ["Jul 11, 2021"]
     },
@@ -40,42 +44,49 @@ export const staticLocations = [
     {
         name: "Taksim Tünel Espresso Lab",
         coords: [41.029526929177116, 28.97536821052866],
+        emoji: "☕",
         tweet: "1430833855620128769",
         date: ["Aug 26, 2021", "Nov 3, 2021"]
     },
     {
         name: "Mi coffees",
         coords: [40.93582392791904, 29.13602316901671],
+        emoji: "☕",
         tweet: "1432616088177627138",
         date: ["Aug 31, 2021"]
     },
     {
         name: "Kava Coffee",
         coords: [41.02494627691233, 28.97841599462193],
+        emoji: "☕",
         tweet: "1433839844401324034",
         date: ["Sep 3, 2021"]
     },
     {
         name: "Bağdat Caddesi Kahve Dünyası",
         coords: [40.96075498296116, 29.080424037368854],
+        emoji: "☕",
         tweet: "1434098915696123904",
         date: ["Sep 4, 2021"]
     },
     {
         name: "Suadiye Espresso Park",
         coords: [40.961074980788986, 29.07461914837032],
+        emoji: "☕",
         tweet: "1442077282395426817",
         date: ["Sep 26, 2021"]
     },
     {
         name: "Gazhane Beltur",
         coords: [40.996878277351584, 29.04327635213339],
+        emoji: "☕",
         tweet: "1456201205756178434",
         date: ["Nov 4, 2021"]
     },
     {
         name: "Narmanlı Han Caffe Nero",
         coords: [41.02932859403292, 28.97544030626945],
+        emoji: "☕",
         tweet: "1457632391204425731",
         date: ["Nov 8, 2021"]
     },
@@ -89,24 +100,27 @@ export const staticLocations = [
     {
         name: "Kadıköy Dem",
         coords: [40.98393075840053, 29.02698466208978],
+        emoji: "☕",
         tweet: "1458752189564923905",
         date: ["Nov 11, 2021"]
     },
     {
         name: "Matters Suadiye",
         coords: [40.96027057068708, 29.079267066794884],
+        emoji: "☕",
         tweet: "1460633646281506816",
         date: ["Nov 16, 2021"]
     },
     {
         name: "Maple Büyükada",
         coords: [40.87387301139603, 29.128902540438354],
+        emoji: "☕",
         tweet: "1460924720338059267",
         date: ["Nov 17, 2021"]
     },
     {
         name: "Türk-Alman Kitapevi",
-        emoji: "📚",
+        emoji: "☕",
         coords: [41.02919606142251, 28.974689902085842],
         tweet: "1467456462016421893",
         date: ["Dec 5, 2021"]
@@ -114,36 +128,42 @@ export const staticLocations = [
     {
         name: "Leaf Co. Suadiye",
         coords: [40.96130219239815, 29.075809633252945],
+        emoji: "☕",
         tweet: "1467868885953265674",
         date: ["Dec 6, 2021"]
     },
     {
         name: "Boite Suadiye",
         coords: [40.96077840915734, 29.074708340170925],
+        emoji: "☕",
         tweet: "1472209671486332939",
         date: ["Dec 18, 2021"]
     },
     {
         name: "Bomonti Cooklife",
         coords: [41.05807632613267, 28.977865647031297],
+        emoji: "☕",
         tweet: "1473612092523622404",
         date: ["Dec 22, 2021"]
     },
     {
         name: "Bebek Starbucks",
         coords: [41.07770845820227, 29.044083264087924],
+        emoji: "☕",
         tweet: "1475795935678636037",
         date: ["Dec 22, 2021"]
     },
     {
         name: "Boden Kadıköy",
         coords: [40.987238157102496, 29.031806351952266],
+        emoji: "☕",
         tweet: "1505927095461031938",
         date: ["Mar 21, 2022"]
     },
     {
         name: "Suadiye Sahil Beltur",
         coords: [40.95519435612767, 29.087028195653005],
+        emoji: "☕",
         tweet: "1514190717480058887",
         date: ["Apr 13, 2022"]
     },
@@ -157,24 +177,28 @@ export const staticLocations = [
     {
         name: "Göcek Moc",
         coords: [36.75279812766125, 28.941966747954112],
+        emoji: "☕",
         tweet: "1524692493043912704",
         date: ["May 12, 2022"]
     },
     {
         name: "Sunday Teşvikiye",
         coords: [41.04951254856202, 28.994799875248926],
+        emoji: "☕",
         tweet: "1526206794938318855",
         date: ["May 16, 2022"]
     },
     {
         name: "Paper Roasting Coffee",
         coords: [40.96024444959819, 29.079263402091726],
+        emoji: "☕",
         tweet: "1531957599255527426",
         date: ["Jun 1, 2022"]
     },
     {
         name: "Hilltown Kronotrop",
         coords: [40.95253062523161, 29.122091006264014],
+        emoji: "☕",
         tweet: "1538459543608381446",
         date: ["Jun 19, 2022"]
     },
@@ -188,6 +212,7 @@ export const staticLocations = [
     {
         name: "Zonguldak Ereğli Mado",
         coords: [41.27891616613494, 31.42229730723591],
+        emoji: "☕",
         tweet: "1552942509281746947",
         date: ["Jul 29, 2022"]
     },
@@ -201,6 +226,7 @@ export const staticLocations = [
     {
         name: "Ereğli Espresso Lab",
         coords: [41.28397372834541, 31.413819067651826],
+        emoji: "☕",
         tweet: "1574372439986954241",
         date: ["Sep 26, 2022"]
     },
@@ -214,6 +240,7 @@ export const staticLocations = [
     {
         name: "Karaköy Kronotrop",
         coords: [41.025464881850894, 28.97962180996314],
+        emoji: "☕",
         tweet: "1584529673261703168",
         date: ["Oct 24, 2022"]
     },
@@ -227,18 +254,21 @@ export const staticLocations = [
     {
         name: "Mankind Coffee & Eatings",
         coords: [40.966591580186986, 29.070570836947304],
+        emoji: "☕",
         tweet: "1607790165145288705",
         date: ["Dec 27, 2022"]
     },
     {
         name: "Coffee Plus Roastery",
         coords: [40.93923092682491, 29.12885759461589],
+        emoji: "☕",
         tweet: "1621073221297606656",
         date: ["Feb 2, 2023"]
     },
     {
         name: "Noema Kafe Datça(Geçici olarak kapalı)",
         coords: [36.74012912734013, 27.666413719475212],
+        emoji: "☕",
         tweet: "1659186974199271424",
         date: ["May 18, 2023"]
     },
@@ -251,7 +281,7 @@ export const staticLocations = [
     },
     {
         name: "Oxygen Pub",
-        emoji: "🍺",
+        emoji: "☕",
         coords: [36.20580773203936, 29.629784493413837],
         tweet: "1660979300349235202",
         date: ["May 23, 2023"]
@@ -259,37 +289,41 @@ export const staticLocations = [
     {
         name: "Suadiye Meet Lab",
         coords: [40.96186234813958, 29.079773948499106],
+        emoji: "☕",
         tweet: "1666025274205515776",
         date: ["Jun 6, 2023"]
     },
     {
         name: "Kronotrop Topağacı",
         coords: [41.05110833455684, 28.9960777480351],
+        emoji: "☕",
         tweet: "1687759452043177985",
         date: ["Aug 5, 2023"]
     },
     {
         name: "Ground Coffee",
         coords: [40.97003451949135, 29.084714214646656],
+        emoji: "☕",
         tweet: "1688201723897110528",
         date: ["Aug 6, 2023"]
     },
     {
         name: "Espresso Lab Caddebostan",
         coords: [40.96381769375554, 29.066048822044866],
+        emoji: "☕",
         tweet: "1688465241175109632",
         date: ["Aug 7, 2023"]
     },
     {
         name: "Kronotrop Suadiye",
         coords: [40.96487198609767, 29.08697412160599],
+        emoji: "☕",
         tweet: "1688872853028900864",
         date: ["Aug 8, 2023"]
     },
     {
         name: "Nunu Cafe Urla",
-        coords: [38.321472194564684, 26.768101703326117]
-        ,
+        coords: [38.321472194564684, 26.768101703326117],
         emoji: "☕",
         tweet: "1689639683125637121",
         date: ["Aug 10, 2023"]
