@@ -404,6 +404,18 @@ export const staticLocations = [
        coords: [13.738683549162314, 100.58009428903114],
         tweet : "1988230634545074322",
         date: ["Nov 11, 2025"]
+    },
+    {
+       "name": "Coffee Craft by Chanintr",
+       coords: [13.73887155306444, 100.5848890436111],
+        tweet : "1989976813163135271",
+        date: ["Nov 16, 2025"]
+    },
+    {
+       "name": "Düzce-Nazımbey",
+       coords: [41.05153354423786, 30.993955980945316],
+        tweet : "2082087207460889023",
+        date: ["July 28, 2026"]
     }
 
 
