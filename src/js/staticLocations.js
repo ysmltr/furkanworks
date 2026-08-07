@@ -1,6 +1,7 @@
 export const staticLocations = [
     {
         name: "Güney Kampüs",
+        emoji: "🎓",
         coords: [41.08367194006505, 29.052383463943805],
         tweet: "1410521715835293701",
         date: ["Jul 1, 2021", "Sep 2, 2021", "Jun 26, 2023"]
@@ -31,6 +32,7 @@ export const staticLocations = [
     },
     {
         name: "Kemerburgaz Kent Ormanı",
+        emoji: "🌲",
         coords: [41.162148167012, 28.88536055388224],
         tweet: "1429416013595090948",
         date: ["Aug 22, 2021", "Aug 27, 2021"]
@@ -79,6 +81,7 @@ export const staticLocations = [
     },
     {
         name: "Kuzey Kampüs",
+        emoji: "🎓",
         coords: [41.08576087060872, 29.045031079850354],
         tweet: "1458026942884630530",
         date: ["Nov 9, 2021"]
@@ -103,6 +106,7 @@ export const staticLocations = [
     },
     {
         name: "Türk-Alman Kitapevi",
+        emoji: "📚",
         coords: [41.02919606142251, 28.974689902085842],
         tweet: "1467456462016421893",
         date: ["Dec 5, 2021"]
@@ -145,6 +149,7 @@ export const staticLocations = [
     },
     {
         name: "Millet Kütüphanesi",
+        emoji: "📚",
         coords: [39.924681773144115, 32.801386818143314],
         tweet: "1515635807184470019",
         date: ["Apr 17, 2022"]
@@ -175,6 +180,7 @@ export const staticLocations = [
     },
     {
         name: "Velidebağ Korusu",
+        emoji: "🌳",
         coords: [41.01408586267071, 29.046643366365185],
         tweet: "1542833210052284416",
         date: ["Jul 1, 2022"]
@@ -187,6 +193,7 @@ export const staticLocations = [
     },
     {
         name: "Assos (Şezlong Takılıyo)",
+        emoji: "🏖️",
         coords: [39.48569256461189, 26.336729285347253],
         tweet: "1554759920716767232",
         date: ["Aug 3, 2022"]
@@ -199,6 +206,7 @@ export const staticLocations = [
     },
     {
         name: "Datça (Şezlong Takılıyo)",
+        emoji: "🏖️",
         coords: [36.728925715753405, 27.68940903502515],
         tweet: "1582301433520496640",
         date: ["Oct 18, 2022"]
@@ -211,6 +219,7 @@ export const staticLocations = [
     },
     {
         name: "Sırbistan",
+        emoji: "✈️",
         coords: [44.822448809088584, 20.45146782373413],
         tweet: "1590350273028898816",
         date: ["Nov 9, 2022"]
@@ -235,12 +244,14 @@ export const staticLocations = [
     },
     {
         name: "Fethiye",
+        emoji: "🏖️",
         coords: [36.659228101831474, 29.124611539253088],
         tweet: "1660550990330732544",
         date: ["May 22, 2023"]
     },
     {
         name: "Oxygen Pub",
+        emoji: "🍺",
         coords: [36.20580773203936, 29.629784493413837],
         tweet: "1660979300349235202",
         date: ["May 23, 2023"]
@@ -277,12 +288,15 @@ export const staticLocations = [
     },
     {
         name: "Nunu Cafe Urla",
-        coords: [38.321472194564684, 26.768101703326117],
+        coords: [38.321472194564684, 26.768101703326117]
+        ,
+        emoji: "☕",
         tweet: "1689639683125637121",
         date: ["Aug 10, 2023"]
     },
     {
         name: "Suò•lo Urla Otel Lobisi",
+        emoji: "🏨",
         coords: [38.32168890289214, 26.766269053000148],
         tweet: "1689936918136385536",
         date: ["Aug 11, 2023"]
@@ -290,6 +304,7 @@ export const staticLocations = [
     {
         name: "Columbia Coffee Ereğli",
         coords: [41.27550954602598, 31.43088006665069],
+        emoji: "☕",
         tweet: "1692877354425557208",
         date: ["Aug 19, 2023"]
     },
@@ -301,18 +316,21 @@ export const staticLocations = [
     },
     {
         name: "Abant",
+        emoji: "🏞️",
         coords: [40.61204707479588, 31.279173145815335],
         tweet: "1808464487478948010",
         date: ["Jul 3, 2024"]
     },
     {
         name: "Tokyo-Kyoto Arası Tren",
+        emoji: "🚄",
         coords: [35.17058351565414, 136.87960637067803],
         tweet: "1791742025924333769",
         date: ["May 18, 2024"]
     },
     {
         name: "Yoyogi Parkı",
+        emoji: "🌳",
         coords: [35.670221760088985, 139.69545912125446],
         tweet: "1788822797210530282",
         date: ["May 10, 2024"]
@@ -320,11 +338,13 @@ export const staticLocations = [
     {
         name: "10 Dixans",
         coords: [35.68983869536977, 139.79190038536365],
+        emoji: "☕",
         tweet: "1786308627441348753",
         date: ["May 3, 2024"]
     },
     {
         name: "Tsutaya Books",
+        emoji: "📚",
         coords: [35.681176312485874, 139.76407347338494],
         tweet: "1782770450650505625",
         date: ["Apr 23, 2024"]
@@ -332,29 +352,35 @@ export const staticLocations = [
     {
         name: "Shinjuku Gyoen Starbucks",
         coords: [35.68375440909633, 139.7114730289013],
+        emoji: "☕",
         tweet: "1781286274890080271",
         date: ["Apr 19, 2024"]
     },
     {
         name: "Kdz. Ereğli’de Caldi’s Cafe",
         coords: [41.283705999918936, 31.414366509513062],
+        emoji: "☕",
         tweet: "1755568041276961148",
         date: ["Feb 8, 2024"]
     },
     {
         name: "Phuket",
+        emoji: "🏖️",
         coords: [7.985807837733737, 98.33724623385275],
         tweet: "1732639696503881754",
         date: ["Dec 7, 2023"]
     },
     {
         name: "Miel Coffee Canggu",
-        coords: [-8.642838795878898, 115.14238485441224],
+        coords: [-8.642838795878898, 115.14238485441224]
+        ,
+        emoji: "☕",
         tweet: "1725052220092326355",
         date: ["Nov 16, 2023"]
     },
     {
         name: "Bali",
+        emoji: "🌴",
         coords: [-8.408732014034221, 115.18652179863304],
         tweet: "1722515830158876721",
         date: ["Nov 9, 2023"]
@@ -362,58 +388,72 @@ export const staticLocations = [
     {
         name: "Hisbeans Caffee Güney Kore",
         coords: [36.01776400828561, 129.31164339761068],
+        emoji: "☕",
         tweet: "1721065188361940999",
         date: ["Nov 5, 2023"]
     },
     {
         name: "Eunpyeong Hanok Village Civarı Bir Kafe",
         coords: [37.64168559665493, 126.93940729929572],
+        
+        emoji: "☕",
         tweet: "1716329760807321713",
         date: ["Oct 23, 2023"],
     },{
         "name": "Luka Cafe",
-        coords: [13.721596914157862, 100.52384627580368],
+        coords: [13.721596914157862, 100.52384627580368]
+        ,
+        emoji: "☕",
         tweet : "1883883437616226428",
         date: ["Jan 27, 2025"]
     },
     {
         "name": "Open House",
         coords: [13.743930796171005, 100.546991567709],
+        emoji: "☕",
         tweet : "1884854445336666452",
         date: ["Jan 30, 2025"]
     },
     {
         "name": "Paper Plane Project",
         coords: [13.722435625647124, 100.58147131971302],
+        emoji: "☕",
         tweet : "1887738447278022728",
         date: ["Feb 7, 2025"]
     },
     {
         "name": "Kronotrop Caddebostan Grove",
         coords: [40.96951258313249, 29.066396187230154],
+        emoji: "☕",
         tweet : "1883086500512125096",
         date: ["Jan 25, 2025"]
     },{
         "name": "Starbucks Reserve Iconsiam",
-        coords: [13.726921028979357, 100.51091259343467],
+        coords: [13.726921028979357, 100.51091259343467]
+        ,
+        emoji: "☕",
         tweet : "1888843402755867092",
         date: ["Feb 10, 2025"]
     },
     {
        "name": "Patom Organic Living",
-       coords: [13.738683549162314, 100.58009428903114],
+       coords: [13.738683549162314, 100.58009428903114]
+       ,
+        emoji: "☕",
         tweet : "1988230634545074322",
         date: ["Nov 11, 2025"]
     },
     {
        "name": "Coffee Craft by Chanintr",
        coords: [13.73887155306444, 100.5848890436111],
+        emoji: "☕",
         tweet : "1989976813163135271",
         date: ["Nov 16, 2025"]
     },
     {
        "name": "Düzce-Nazımbey",
        coords: [41.05153354423786, 30.993955980945316],
+       emoji: "🌳",
         tweet : "2082087207460889023",
         date: ["July 28, 2026"]
     }
@@ -421,4 +461,3 @@ export const staticLocations = [
 
     
 ];
-

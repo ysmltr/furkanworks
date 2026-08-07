@@ -14,7 +14,18 @@ function formatDate(raw){
   return d.toLocaleDateString('tr-TR',{day:'2-digit',month:'2-digit',year:'numeric'});
 }
 
-/* — 3. Marker fonksiyonu — */
+/* — 3. Emoji ikon — */
+function emojiIcon(emoji){
+  return L.divIcon({
+    className: 'emoji-marker',
+    html: emoji,
+    iconSize:   [34, 34],
+    iconAnchor: [17, 17],
+    popupAnchor:[0, -20]
+  });
+}
+
+/* — 4. Marker fonksiyonu — */
 function addMarker(row){
   if(!row.coords) return;
   let [lat,lng] = Array.isArray(row.coords)? row.coords
@@ -36,7 +47,8 @@ function addMarker(row){
       ${tweetDiv}
     </div>`;
 
-  const m = L.marker([lat,lng]).addTo(map).bindPopup(html);
+  const m = L.marker([lat,lng], { icon: emojiIcon(row.emoji ?? '☕') })
+             .addTo(map).bindPopup(html);
 
   m.on('popupopen', ()=>{
     if(row.tweet && window.twttr?.widgets){
@@ -49,10 +61,10 @@ function addMarker(row){
   });
 }
 
-/* — 4. Statik lokasyonları ekle — */
+/* — 5. Statik lokasyonları ekle — */
 staticLocations.forEach(addMarker);
 
-/* — 5. Mobil popup kaydırma (opsiyonel) — */
+/* — 6. Mobil popup kaydırma (opsiyonel) — */
 if(L.Browser.mobile){
   map.on('popupopen', e=>{
     const px = map.project(e.target._popup._latlng);
@@ -61,7 +73,7 @@ if(L.Browser.mobile){
   });
 }
 
-/* — 6. FAQ düğmesi — */
+/* — 7. FAQ düğmesi — */
 const faqBtn   = document.getElementById('faq-btn');
 const faqModal = document.getElementById('faq-modal');
 const faqClose = document.getElementById('faq-close');
