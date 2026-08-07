@@ -1,9 +1,5 @@
 import { staticLocations } from './staticLocations.js';
 
-/* — 0. Sabitler — */
-const ENDPOINT = 'https://furkanworks.onrender.com/api/add';
-const NOMINATIM = 'https://nominatim.openstreetmap.org/search';
-
 /* — 1. Harita — */
 const map = L.map('map').setView([39.93, 32.86], 6);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -14,26 +10,11 @@ function serialToDate(s){const d=new Date(Date.UTC(1899,11,30));d.setUTCDate(d.g
 function formatDate(raw){
   let d; if (/^\d+$/.test(raw)) d=serialToDate(raw);
   else if (/\d{4}-\d{2}-\d{2}/.test(raw)) d=new Date(raw);
-  else return raw||''; 
+  else return raw||'';
   return d.toLocaleDateString('tr-TR',{day:'2-digit',month:'2-digit',year:'numeric'});
 }
-function extractName(url){
-  const m=url.match(/\/maps\/place\/([^/]+)/);
-  return m?decodeURIComponent(m[1]).replace(/\+/g,' '):'';
-}
 
-/* — 3. Form otomatik isim — */
-const addrIn = document.getElementById('address');
-const nameIn = document.getElementById('name');
-if (addrIn && nameIn){
-  addrIn.addEventListener('blur', ()=>{
-    if(nameIn.value.trim()) return;
-    const auto = extractName(addrIn.value);
-    if(auto) nameIn.value = auto;
-  });
-}
-
-/* — 4. Marker fonksiyonu — */
+/* — 3. Marker fonksiyonu — */
 function addMarker(row){
   if(!row.coords) return;
   let [lat,lng] = Array.isArray(row.coords)? row.coords
@@ -68,50 +49,10 @@ function addMarker(row){
   });
 }
 
-/* — 5. Statik lokasyonları ekle — */
+/* — 4. Statik lokasyonları ekle — */
 staticLocations.forEach(addMarker);
 
-/* — 6. Form submit — */
-const form = document.getElementById('location-form');
-if(form){
-  form.addEventListener('submit', async e=>{
-    e.preventDefault();
-
-    const rawAddr = addrIn.value.trim();
-    /* 6.1 Geocode */
-    const geoURL = `${NOMINATIM}?format=json&limit=1&q=${encodeURIComponent(rawAddr)}`;
-    let lat,lng;
-    try{
-      const g = await (await fetch(geoURL,{headers:{'Accept-Language':'tr'}})).json();
-      if(!g.length){ alert('Adres bulunamadı'); return; }
-      lat = +g[0].lat; lng = +g[0].lon;
-    }catch(err){ alert('Geocode hatası'); return; }
-
-    /* 6.2 SheetDB’ye POST */
-    const payload = {
-      name:   nameIn.value.trim() || extractName(rawAddr),
-      date:   document.getElementById('date').value,
-      address: rawAddr,
-      comment: document.getElementById('comment').value.trim(),
-      coords: `${lat},${lng}`
-    };
-    try{
-      const r = await fetch(ENDPOINT,{
-        method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({ data: payload })
-      });
-      if(!r.ok){ alert('Kaydetme hatası'); return; }
-    }catch(err){ alert('Ağ hatası'); return; }
-
-    /* 6.3 Haritaya ekle, formu sıfırla */
-    addMarker(payload);
-    alert('Mekan eklendi');
-    form.reset();
-    document.getElementById('modal').style.display='none';
-  });
-}
-
-/* — 7. Mobil popup kaydırma (opsiyonel) — */
+/* — 5. Mobil popup kaydırma (opsiyonel) — */
 if(L.Browser.mobile){
   map.on('popupopen', e=>{
     const px = map.project(e.target._popup._latlng);
@@ -120,8 +61,7 @@ if(L.Browser.mobile){
   });
 }
 
-
-/* — 8. FAQ düğmesi — */
+/* — 6. FAQ düğmesi — */
 const faqBtn   = document.getElementById('faq-btn');
 const faqModal = document.getElementById('faq-modal');
 const faqClose = document.getElementById('faq-close');

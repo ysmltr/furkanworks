@@ -21,53 +21,17 @@
 <body>
 
   <div id="map" style="height:100vh;"></div>
-<!-- map div’inin hemen sonrasına yerleştir -->
-<button id="faq-btn" class="circle-btn">?</button>
 
-<div id="faq-modal" class="faq-modal">
-  <div class="faq-box">
-    <span id="faq-close" class="close">×</span>
-    <p>• Kafe adına tıkladığınızda konum Google Maps’te açılır.</p>
-    <p>• Google Maps'te konumun üzerine sağ tıklayın ve en üstte çıkan koordinatları adres kısmına yazın.</p>
-        <p>• Google Maps verisi her zaman %100 doğru olmayabilir; ilgili konuma vardığınızda mutlaka kontrol edin.</p>
-        
-  </div>
-</div>
+  <button id="faq-btn" class="circle-btn">?</button>
 
-  <!-- + butonu -->
-  <button id="add-location-btn">+</button>
-
-  <!-- Modal -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="close-modal" class="close">&times;</span>
-      <h2>Mekan Ekle</h2>
-
-      <form id="location-form">
-        <label>Mekan Adı</label>
-        <input id="name" >
-
-        <label>Tarih</label>
-        <input id="date" type="date">
-
-        <label>Adres</label>
-        <input id="address" required placeholder="bilgi için lütfen sağ üstteki “?” butona tıklayın">
-
-        <label>Yorum</label>
-        <textarea id="comment" rows="4"
-          placeholder="Mekan hakkındaki tüm görüşlerinizi bu kısma yazabilirsiniz."></textarea>
-
-        <button type="submit">Gönder</button>
-      </form>
+  <div id="faq-modal" class="faq-modal">
+    <div class="faq-box">
+      <span id="faq-close" class="close">×</span>
+      <p>• Kafe adına tıkladığınızda konum Google Maps’te açılır.</p>
+      <p>• Google Maps verisi her zaman %100 doğru olmayabilir; ilgili konuma vardığınızda mutlaka kontrol edin.</p>
     </div>
   </div>
 
   <script type="module" src="src/js/main.js"></script>
-  <script>
-    const modal = document.getElementById('modal');
-    document.getElementById('add-location-btn').onclick = () => modal.style.display = 'block';
-    document.getElementById('close-modal').onclick       = () => modal.style.display = 'none';
-    window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
-  </script>
 </body>
 </html>
