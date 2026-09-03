@@ -490,6 +490,13 @@ export const staticLocations = [
        emoji: "🌳",
         tweet : "2082087207460889023",
         date: ["July 28, 2026"]
+    },
+    {
+      "name": "Citycup BKK",
+       coords: [13.714847184843538, 100.55844412384822],
+       emoji: "☕",
+        tweet : "2093241508803821694",
+        date: ["Aug 28, 2026"]  
     }
 
 
