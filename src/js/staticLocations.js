@@ -497,6 +497,20 @@ export const staticLocations = [
        emoji: "☕",
         tweet : "2093241508803821694",
         date: ["Aug 28, 2026"]  
+    },
+    {
+      "name": "Hokkaido-Tokyo Shinkansen",
+       coords: [36.117307793694955, 139.81107009442388],
+       emoji: "🚄",
+        tweet : "2104089402393985191",
+        date: ["Sep 27, 2026"]  
+    },
+    {
+        "name":"Blue Bottle Coffee - Daikan-yama Cafe",
+        coords:[35.64901020309944, 139.7032149861034],
+        emoji: "☕",
+        tweet: "2105892729905631305",
+        date: ["Oct 2, 2026"]    
     }
 
 
